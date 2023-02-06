@@ -1,0 +1,47 @@
+﻿@model DataBase.Base
+
+@{
+	ViewData["Title"] = "Full info order";
+}
+
+<header>
+	<span class="logo">Full info order</span>
+</header>
+
+
+<table class="fullinfo">
+	<tr>
+		<td>Number order</td>
+		<td>@Model.Id</td>
+	</tr>
+
+	<tr>
+		<td>Sender City</td>
+		<td>@Model.SenderCity</td>
+	</tr>
+
+	<tr>
+		<td>Sender Address</td>
+		<td>@Model.SenderAddress</td>
+	</tr>
+
+	<tr>
+		<td>Recipient City</td>
+		<td>@Model.RecipientCity</td>
+	</tr>
+
+	<tr>
+		<td>Recipient Address</td>
+		<td>@Model.RecipientAddress</td>
+	</tr>
+
+	<tr>
+		<td>Weight(gram)</td>
+		<td>@Model.Weight</td>
+	</tr>
+
+	<tr>
+		<td>Date</td>
+		<td>@Model.Date</td>
+	</tr>
+</table>

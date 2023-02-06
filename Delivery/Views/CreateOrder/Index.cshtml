@@ -1,0 +1,38 @@
+﻿@model DataBase.Base
+
+@{
+	ViewData["Title"] = "Create Order";
+}
+
+<header>
+		<span class="logo">Create Order</span>
+	</header>
+
+<form method="post" asp-controller="CreateOrder" asp-action="Check">
+	<label asp-for="SenderCity"></label>
+	<input asp-for="SenderCity" />
+	<span asp-validation-for="SenderCity"></span>
+
+	<label asp-for="SenderAddress"></label>
+	<input asp-for="SenderAddress" />
+	<span asp-validation-for="SenderAddress"></span>
+
+	<label asp-for="RecipientCity"></label>
+	<input asp-for="RecipientCity" />
+	<span asp-validation-for="RecipientCity"></span>
+
+	<label asp-for="RecipientAddress"></label>
+	<input asp-for="RecipientAddress" />
+	<span asp-validation-for="RecipientAddress"></span>
+
+	<label asp-for="Weight"></label>
+	<input asp-for="Weight" />
+	<span asp-validation-for="Weight"></span>
+
+	<label asp-for="Date"></label>
+	<input asp-for="Date" />
+	<span asp-validation-for="Date"></span>
+
+	<input type="submit" value="Create" />
+
+</form>
